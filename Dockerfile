@@ -28,4 +28,4 @@ RUN apk --no-cache --upgrade --virtual=build-dependencies add \
 WORKDIR /data
 
 STOPSIGNAL SIGQUIT
-ENTRYPOINT [ "rclone" ]
+ENTRYPOINT [ "/usr/bin/rclone" ]
