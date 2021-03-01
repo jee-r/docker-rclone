@@ -8,7 +8,6 @@ LABEL name="docker-rclone" \
 
 ENV XDG_CONFIG_HOME=/config
 
-
 RUN apk --no-cache --upgrade --virtual=build-dependencies add \
       unzip \
       wget && \
