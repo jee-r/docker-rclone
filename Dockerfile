@@ -21,7 +21,6 @@ RUN apk --no-cache --upgrade --virtual=build-dependencies add \
     unzip rclone-current-linux-amd64.zip && \
     cp /tmp/rclone-*-linux-amd64/rclone /usr/bin/rclone && \
     chmod 755 /usr/bin/rclone && \
-    echo "user_allow_other" >> /etc/fuse.conf && \
     apk del --purge build-dependencies && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 
